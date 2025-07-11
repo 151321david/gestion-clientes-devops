@@ -1,0 +1,40 @@
+#  Gestión de Clientes - Proyecto DevOps
+
+Este proyecto es una aplicación desarrollada en Python para la gestión de clientes. Forma parte de una tarea académica para la materia **Fundamentos de operaciones y desarrollo (DevOps)**.
+
+##  Funcionalidades
+
+- Añadir clientes (nombre y correo)
+- Visualizar lista de clientes
+- Menú interactivo en línea de comandos (CLI)
+
+##  Equipo y Roles DevOps
+
+| Nombre | Rol DevOps | Descripción |
+|--------|------------|-------------|
+| David Gabriel | Developer | Desarrollo de la aplicación en Python |
+| [Miembro 2] | Tester | Pruebas manuales y automatizadas |
+| [Miembro 3] | Release Manager | Gestión de versiones y despliegues |
+| [Miembro 4] | DevOps Engineer | Automatización con GitHub Actions |
+
+##  Pruebas
+
+Se incluye un archivo `test_input.txt` con entradas simuladas para la ejecución automática de la aplicación.
+
+##  Automatización CI/CD con GitHub Actions
+
+Este proyecto cuenta con un flujo automatizado que se ejecuta en cada push y pull request:
+
+- Configura entorno Python.
+- Instala dependencias.
+- Ejecuta el script principal.
+- Simula entrada por consola.
+
+Ubicación del flujo: `.github/workflows/python-app.yml`
+
+## Ejecución local
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/usuario/gestion-clientes-devops.git
+cd gestion-clientes-devops
