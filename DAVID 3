@@ -1,0 +1,7 @@
+gestion-clientes-devops/
+├── gestion_clientes.py
+├── test_input.txt
+├── README.md
+└── .github/
+    └── workflows/
+        └── python-app.yml
