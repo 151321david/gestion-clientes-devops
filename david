@@ -1,0 +1,35 @@
+# archivo: gestion_clientes.py
+
+clientes = []
+
+def agregar_cliente():
+    nombre = input("Nombre del cliente: ")
+    email = input("Correo electrónico: ")
+    clientes.append({"nombre": nombre, "email": email})
+    print(" Cliente agregado.")
+
+def mostrar_clientes():
+    print("\n Lista de clientes:")
+    for i, cliente in enumerate(clientes, 1):
+        print(f"{i}. {cliente['nombre']} - {cliente['email']}")
+
+def menu():
+    while True:
+        print("\n--- Menú Gestión de Clientes ---")
+        print("1. Agregar cliente")
+        print("2. Mostrar clientes")
+        print("3. Salir")
+        opcion = input("Selecciona una opción: ")
+        
+        if opcion == "1":
+            agregar_cliente()
+        elif opcion == "2":
+            mostrar_clientes()
+        elif opcion == "3":
+            print("Saliendo del sistema.")
+            break
+        else:
+            print(" Opción inválida.")
+
+if __name__ == "__main__":
+    menu()
