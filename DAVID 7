@@ -1,0 +1,8 @@
+def eliminar_cliente():
+    nombre = input("Nombre del cliente a eliminar: ")
+    for cliente in clientes:
+        if cliente["nombre"].lower() == nombre.lower():
+            clientes.remove(cliente)
+            print(" Cliente eliminado.")
+            return
+    print(" Cliente no encontrado.")
