@@ -1,0 +1,6 @@
+# Esta parte fue eliminada (por error):
+# def agregar_cliente():
+#     nombre = input("Nombre del cliente: ")
+#     email = input("Email del cliente: ")
+#     clientes.append({"nombre": nombre, "email": email})
+#     print("Cliente agregado correctamente.")
