@@ -1,0 +1,5 @@
+git checkout -b mejora-gestion-clientes
+# Aplica los cambios sugeridos al archivo .py
+git add gestion_clientes.py
+git commit -m "Mejoras: validación al editar y eliminar clientes"
+git push origin mejora-gestion-clientes
