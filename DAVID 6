@@ -1,0 +1,11 @@
+def modificar_cliente():
+    nombre = input("Nombre del cliente a modificar: ")
+    for cliente in clientes:
+        if cliente["nombre"].lower() == nombre.lower():
+            nuevo_nombre = input("Nuevo nombre: ")
+            nuevo_email = input("Nuevo email: ")
+            cliente["nombre"] = nuevo_nombre
+            cliente["email"] = nuevo_email
+            print(" Cliente modificado.")
+            return
+    print(" Cliente no encontrado.")
